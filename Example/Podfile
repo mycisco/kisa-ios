@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'kisa-crypto-swift_Example' do
+  pod 'kisa-crypto-swift', :path => '../'
+
+end

@@ -1,0 +1,16 @@
+PODS:
+  - kisa-crypto-swift (0.1.0)
+
+DEPENDENCIES:
+  - kisa-crypto-swift (from `../`)
+
+EXTERNAL SOURCES:
+  kisa-crypto-swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  kisa-crypto-swift: 055a602412f3d41c417fabfcc3aecaa0022326be
+
+PODFILE CHECKSUM: 4ba6885f819b5d594d8c4f95b39f91e8472a3a9c
+
+COCOAPODS: 1.5.0

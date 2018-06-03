@@ -1,0 +1,6 @@
+framework module kisa_crypto_swift {
+  umbrella header "kisa-crypto-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

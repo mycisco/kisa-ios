@@ -11,11 +11,6 @@
 		23291B73EBB1179980F03A15FC0BE624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		5834DE69BAF3390395F9A9E978260EC9 /* kisa-crypto-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1415B5B50A7FA57446757F4F5209A5 /* kisa-crypto-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		678AA30D2A52890205FB308221E29C64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A5AADB2420D1BF1600CC23A9 /* ariacbc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5AADB1820D1BF0700CC23A9 /* ariacbc.c */; };
-		A5AADB2520D1BF1600CC23A9 /* drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = A5AADB1920D1BF0700CC23A9 /* drbg.c */; };
-		A5AADB2620D1BF1900CC23A9 /* seedcbc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5AADB1A20D1BF0700CC23A9 /* seedcbc.c */; };
-		A5AADB2720D1BF7000CC23A9 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = A5AADB2020D1BF0700CC23A9 /* sha256.c */; };
-		A5AADB2820D1BF7000CC23A9 /* hightcbc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5AADB2220D1BF0700CC23A9 /* hightcbc.c */; };
 		B1AB7F9090491770A848F7254FEB859E /* kisa-crypto-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9180E5FB8B259BE625A3633A05D788 /* kisa-crypto-swift-dummy.m */; };
 		D467F7AF161F15E16836E25ECCC57719 /* Pods-kisa-crypto-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAB42088E06DDE5B5D9FD9AF4D300CA /* Pods-kisa-crypto-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9827DEE97D35C15B8DCDF8EB59D7884 /* crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C4A77BD10303FD9AE333F8919AC3B9 /* crypto.swift */; };
@@ -50,18 +45,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97C4A77BD10303FD9AE333F8919AC3B9 /* crypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = crypto.swift; path = "kisa-crypto-swift/Classes/crypto.swift"; sourceTree = "<group>"; };
 		A02F6D6446E12BF5E15B77665BD77441 /* Pods-kisa-crypto-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kisa-crypto-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A5AADB1820D1BF0700CC23A9 /* ariacbc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ariacbc.c; sourceTree = "<group>"; };
-		A5AADB1920D1BF0700CC23A9 /* drbg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = drbg.c; sourceTree = "<group>"; };
-		A5AADB1A20D1BF0700CC23A9 /* seedcbc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seedcbc.c; sourceTree = "<group>"; };
-		A5AADB1B20D1BF0700CC23A9 /* sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
-		A5AADB1C20D1BF0700CC23A9 /* pbkdf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbkdf.h; sourceTree = "<group>"; };
-		A5AADB1D20D1BF0700CC23A9 /* hightcbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hightcbc.h; sourceTree = "<group>"; };
-		A5AADB1E20D1BF0700CC23A9 /* ariacbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ariacbc.h; sourceTree = "<group>"; };
-		A5AADB1F20D1BF0700CC23A9 /* drbg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drbg.h; sourceTree = "<group>"; };
-		A5AADB2020D1BF0700CC23A9 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
-		A5AADB2120D1BF0700CC23A9 /* seedcbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seedcbc.h; sourceTree = "<group>"; };
-		A5AADB2220D1BF0700CC23A9 /* hightcbc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hightcbc.c; sourceTree = "<group>"; };
-		A5AADB2320D1BF0700CC23A9 /* pbkdf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pbkdf.c; sourceTree = "<group>"; };
 		B61052042F30689553F5AAF4A88DB641 /* Pods-kisa-crypto-swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kisa-crypto-swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BDAB42088E06DDE5B5D9FD9AF4D300CA /* Pods-kisa-crypto-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kisa-crypto-swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		C7D830E38318FD12B72E46D41B0184C7 /* Pods-kisa-crypto-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kisa-crypto-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -107,7 +90,6 @@
 		565E7A3E48E584340A4462F9A2F0EB29 /* kisa-crypto-swift */ = {
 			isa = PBXGroup;
 			children = (
-				A5AADB1720D1BF0700CC23A9 /* Core */,
 				97C4A77BD10303FD9AE333F8919AC3B9 /* crypto.swift */,
 				BFC43708E731C1D14CC3ACB108C811C7 /* Pod */,
 				27F56D326D2CE730998657294AAB40C1 /* Support Files */,
@@ -150,26 +132,6 @@
 				86B104ACB61A58024B566B38F3678705 /* Pods_kisa_crypto_swift_Example.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A5AADB1720D1BF0700CC23A9 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A5AADB1820D1BF0700CC23A9 /* ariacbc.c */,
-				A5AADB1920D1BF0700CC23A9 /* drbg.c */,
-				A5AADB1A20D1BF0700CC23A9 /* seedcbc.c */,
-				A5AADB1B20D1BF0700CC23A9 /* sha256.h */,
-				A5AADB1C20D1BF0700CC23A9 /* pbkdf.h */,
-				A5AADB1D20D1BF0700CC23A9 /* hightcbc.h */,
-				A5AADB1E20D1BF0700CC23A9 /* ariacbc.h */,
-				A5AADB1F20D1BF0700CC23A9 /* drbg.h */,
-				A5AADB2020D1BF0700CC23A9 /* sha256.c */,
-				A5AADB2120D1BF0700CC23A9 /* seedcbc.h */,
-				A5AADB2220D1BF0700CC23A9 /* hightcbc.c */,
-				A5AADB2320D1BF0700CC23A9 /* pbkdf.c */,
-			);
-			name = Core;
-			path = "kisa-crypto-swift/Classes/Core";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -306,11 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9827DEE97D35C15B8DCDF8EB59D7884 /* crypto.swift in Sources */,
-				A5AADB2820D1BF7000CC23A9 /* hightcbc.c in Sources */,
-				A5AADB2420D1BF1600CC23A9 /* ariacbc.c in Sources */,
-				A5AADB2620D1BF1900CC23A9 /* seedcbc.c in Sources */,
-				A5AADB2520D1BF1600CC23A9 /* drbg.c in Sources */,
-				A5AADB2720D1BF7000CC23A9 /* sha256.c in Sources */,
 				B1AB7F9090491770A848F7254FEB859E /* kisa-crypto-swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +352,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -427,7 +384,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

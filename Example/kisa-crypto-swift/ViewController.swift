@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Test().echoPrint()
+        /*
+         사용자 키는 sha256 으로 해쉬 처리
+         */
+        let key = "abcde"
+        KISACrypto.seedEncrypt(key: "as")
+//        Test().echoPrint()
 
     }
 

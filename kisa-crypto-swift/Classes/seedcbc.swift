@@ -14,7 +14,7 @@ public class KISACrypto {
         
         var md: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer<UInt8>.allocate(capacity: 32)
         KISA_SHA256_final(sha256Pointer, md)
-        debugPrint("Asd")
+        debugPrint("12323")
         debugPrint(md)
     }
 

@@ -212,16 +212,13 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kisa-crypto-swift_Example/Pods-kisa-crypto-swift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/kisa-crypto-swift/kisa_crypto_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/kisa_crypto_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kisa-crypto-swift_Example/Pods-kisa-crypto-swift_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kisa-crypto-swift_Example/Pods-kisa-crypto-swift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

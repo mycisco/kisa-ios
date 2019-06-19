@@ -10,6 +10,14 @@
 #endif
 #endif
 
+#import "ariacbc.h"
+#import "drbg.h"
+#import "hightcbc.h"
+#import "pbkdf.h"
+#import "seedcbc.h"
+#import "ariacbc.h"
+#import "sha256.h"
+
 
 FOUNDATION_EXPORT double kisa_crypto_swiftVersionNumber;
 FOUNDATION_EXPORT const unsigned char kisa_crypto_swiftVersionString[];

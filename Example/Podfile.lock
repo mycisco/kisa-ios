@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  kisa-crypto-swift: 055a602412f3d41c417fabfcc3aecaa0022326be
+  kisa-crypto-swift: b6c3f23aafea1b437e2803ebfd86caf65e396ad5
 
-PODFILE CHECKSUM: 4ba6885f819b5d594d8c4f95b39f91e8472a3a9c
+PODFILE CHECKSUM: eeacbcd935f40ddb95726c3d99618a39a5446c7a
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.2

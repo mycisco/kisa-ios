@@ -1,9 +1,9 @@
 {
   "name": "kisa-crypto-swift",
   "version": "0.1.0",
-  "summary": "A short description of kisa-crypto-swift.",
+  "summary": "test summary",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Marbean/kisa-crypto-swift",
+  "homepage": "https://github.com/mycisco/kisa-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Marbean": "mycisco@me.com"
   },
   "source": {
-    "git": "https://github.com/Marbean/kisa-crypto-swift.git",
+    "git": "https://github.com/mycisco/kisa-ios.git",
     "tag": "0.1.0"
   },
   "platforms": {

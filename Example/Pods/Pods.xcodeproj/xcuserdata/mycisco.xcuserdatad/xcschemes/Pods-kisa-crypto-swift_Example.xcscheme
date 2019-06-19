@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43888729EE339DFC076284A7F212AFBA"
+               BlueprintIdentifier = "AB813B73628E3E16C3A138EF5D1033A9"
                BuildableName = "Pods_kisa_crypto_swift_Example.framework"
                BlueprintName = "Pods-kisa-crypto-swift_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43888729EE339DFC076284A7F212AFBA"
+            BlueprintIdentifier = "AB813B73628E3E16C3A138EF5D1033A9"
             BuildableName = "Pods_kisa_crypto_swift_Example.framework"
             BlueprintName = "Pods-kisa-crypto-swift_Example"
             ReferencedContainer = "container:Pods.xcodeproj">

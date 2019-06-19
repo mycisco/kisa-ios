@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include "hightcbc.h"
+#include <string.h>
 
 unsigned char F0[256] = {
 		0, 134, 13, 139, 26, 156, 23, 145, 52, 178, 57, 191, 46, 168, 35, 165, 
@@ -247,6 +248,7 @@ void internal_hight_process_blocks(const KISA_HIGHT_KEY *hight_key, int encrypt,
 			KISA_HIGHT_encrypt_block(out, out, hight_key);
 			iv = out;
 		}
+        //*memcpy(void *__dst, const void *__src, size_t __n);
 		memcpy(ivec, iv, HIGHT_BLOCK_SIZE);
 	}
 	else if (in != out) {

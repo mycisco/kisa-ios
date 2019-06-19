@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <time.h>
 #include "hightcbc.h"
-#include "string.h"
 
 unsigned char F0[256] = {
 		0, 134, 13, 139, 26, 156, 23, 145, 52, 178, 57, 191, 46, 168, 35, 165, 

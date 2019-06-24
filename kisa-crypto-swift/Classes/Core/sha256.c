@@ -168,6 +168,9 @@ int KISA_SHA256_final(KISA_SHA256 *sha256, uint8_t *out) {
 static int SHA256_compute(KISA_SHA256 *sha256, uint8_t *data) {
 	
 	int i;
+    /*
+     uint8_t? type casting?
+     */
 	uint32_t data_temp[8], W[64];
 	uint32_t temp, t1, temp2;
 	int off = 0;

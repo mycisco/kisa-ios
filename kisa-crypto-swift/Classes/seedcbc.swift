@@ -1,29 +1,63 @@
 //import KISACrypto
 
+import Foundation
+import CommonCrypto
+
 public class KISACrypto {
     
-    static func sha256(key: String) {
+    static func sha256(key: String) -> Data? {
+        
+        /* 초기화 */
         let sha256Pointer: UnsafeMutablePointer<KISA_SHA256> = UnsafeMutablePointer<KISA_SHA256>.allocate(capacity: 1)
-        KISA_SHA256_init(sha256Pointer)
+        let initResult = KISA_SHA256_init(sha256Pointer)
+        guard initResult == 1 else {
+            DEBUG_LOG("KISA_SHA256_init 실패")
+            sha256Pointer.deallocate()
+            return nil
+        }
         
-        let data = key.data(using: .utf8, allowLossyConversion: false)
+        let updateResult = KISA_SHA256_update(sha256Pointer,
+                                              key,
+                                              UInt32(key.count))
+
+        guard updateResult == 1 else {
+            DEBUG_LOG("KISA_SHA256_update 실패")
+            sha256Pointer.deallocate()
+            return nil
+        }
         
-        KISA_SHA256_update(sha256Pointer,
-                           UnsafeMutablePointer<UInt8>.allocate(capacity: data!.count),
-                           UInt32(key.count))
+        let md = UnsafeMutablePointer<UInt8>.allocate(capacity: 32)
+        let finalResult = KISA_SHA256_final(sha256Pointer, md)
+
+        guard finalResult == 1 else {
+            DEBUG_LOG("KISA_SHA256_final 실패")
+            sha256Pointer.deallocate()
+            md.deallocate()
+            return nil
+        }
         
-        var md: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer<UInt8>.allocate(capacity: 32)
-        KISA_SHA256_final(sha256Pointer, md)
-        debugPrint("12323")
-        debugPrint(md)
+        let data = Data(bytesNoCopy: md, count: 32, deallocator: .free)
+        DEBUG_LOG(data.hexString)
+        
+        return data
     }
+    
+
 
     static public func seedEncrypt(key: String) {
         
-        sha256(key: key)
-//        let keyData = key.data(using: <#T##String.Encoding#>)
-//        sha
+        guard let key = sha256(key: key) else {
+            DEBUG_LOG("sha256 키 생성 실패")
+            return
+        }
+
         
     }
     
+}
+
+extension Data {
+    var hexString: String {
+        return self.reduce("", { $0 + String(format: "%02x", $1) })
+    }
 }

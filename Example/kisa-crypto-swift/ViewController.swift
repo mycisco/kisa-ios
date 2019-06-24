@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         /*
          사용자 키는 sha256 으로 해쉬 처리
          */
-        let key = "abcde"
-        KISACrypto.seedEncrypt(key: "as")
+        let key = "1234"
+        KISACrypto.seedEncrypt(key: "12345678901234567890123456789012")
 //        Test().echoPrint()
 
     }
